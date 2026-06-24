@@ -16,10 +16,13 @@ import {
   figma,
   docker,
   threejs,
+  python,
+  express,
+  postman,
   carrent,
   jobit,
   tripguide,
-  
+
 } from "../assets";
 
 import project1Video from "../assets/videos/project1.mp4";
@@ -103,6 +106,11 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
+
+  {
+    name: "Python",
+    icon: python,
+  },
   {
     name: "git",
     icon: git,
@@ -115,6 +123,15 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Postman",  
+    icon: postman,
+  },
+  {
+    name: "express",
+    icon: express,
+  }
+
 ];
 
 const experiences = [

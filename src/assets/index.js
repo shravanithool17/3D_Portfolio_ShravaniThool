@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
+import python from "./tech/python.png";
+import postman from "./tech/postman.png";
+import express from "./tech/express.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -48,10 +51,13 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  python,
   redux,
+  express,
   tailwind,
   typescript,
   threejs,
+  postman,
   meta,
   shopify,
   starbucks,
