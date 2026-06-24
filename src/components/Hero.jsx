@@ -22,11 +22,11 @@ const Hero = () => {
               <span className="text-[#915eff]">Shravani</span>
             </h1>
 
-            <p className={`${styles.heroSubText} mt-2 text-white-50 max-w-[600px]`}>
-              A Third-Year Electronics & Computer Engineering Student at PICT, Pune
-              <br className="sm:block hidden" />
-              I build full-stack web applications using the MERN stack,
-            </p>
+            <p className={`${styles.heroSubText} mt-2 text-white-50 max-w-[650px]`}>
+  A third-year Electronics & Computer Engineering student at PICT, Pune
+  <br className="sm:block hidden" />
+  I build full-stack web applications using the MERN stack, with a focus on clean UI and scalable backend systems.
+</p>
           </div>
         </div>
 

@@ -114,7 +114,7 @@ const About = () => {
       <motion.p 
       variants={fadeIn("", "", 0.1, 1)}
       className='text-secondary text-[17px] max-w-3xl leading-[30px] flex-1'>
-        I am a second-year Electronics and Computer Engineering student at PICT, Pune, with a strong interest in web development and building useful real-world applications. I enjoy working with the MERN stack and love creating websites that are both user-friendly and efficient.
+        I am a third-year Electronics and Computer Engineering student at PICT, Pune, with a strong interest in web development and building useful real-world applications. I enjoy working with the MERN stack and love creating websites that are both user-friendly and efficient.
 
 I like working on complete projects, where I can take an idea and turn it into something functional and visually appealing. I have participated in hackathons and explored technologies like blockchain and machine learning, which has helped me improve my problem-solving skills and learn how to work better in a team.
 
