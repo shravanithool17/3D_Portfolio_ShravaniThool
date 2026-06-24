@@ -25,8 +25,7 @@ const Hero = () => {
             >
               A third-year Electronics & Computer Engineering student at PICT,
               Pune
-              <br />I build full-stack web applications using the MERN stack,
-              with a focus on clean UI and scalable backend systems.
+              <br />I build full-stack web applications using the MERN stack.
             </p>
           </div>
         </div>
