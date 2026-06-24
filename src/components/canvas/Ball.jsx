@@ -27,18 +27,46 @@ const Ball = (props) => {
   )
 }
 
+class BallErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) {
+      return null;
+    }
+    return this.props.children;
+  }
+}
+
 const BallCanvas = ({icon})=>{
   return(
    <Canvas
-      frameloop="demand"  // ← "always" ki jagah "demand" try kar
-      gl={{ preserveDrawingBuffer: true }}
+      frameloop="always"
+      dpr={[1, 1.5]}
+      gl={{
+        preserveDrawingBuffer: true,
+        powerPreference: "low-power",
+        antialias: false,
+        failIfMajorPerformanceCaveat: false,
+      }}
+      onCreated={({ gl }) => {
+        gl.getContext().canvas.addEventListener('webglcontextlost', (e) => {
+          e.preventDefault();
+        }, false);
+      }}
     >
-      <Suspense fallback={<CanvasLoader />}>  {/* ← Loader lagao */}
-        <OrbitControls
-          enableZoom={false}
-        />
-       <Ball imgUrl={icon} />
-        
+      <Suspense fallback={<CanvasLoader />}>
+        <BallErrorBoundary>
+          <OrbitControls
+            enableZoom={false}
+          />
+          <Ball imgUrl={icon} />
+        </BallErrorBoundary>
       </Suspense>
       <Preload all />
     </Canvas>
