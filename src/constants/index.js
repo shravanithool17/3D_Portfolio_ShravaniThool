@@ -123,7 +123,7 @@ const experiences = [
     company_name: "UrbanRize Technologies",
     icon: web,
     iconBg: "#383E56",
-    date: "Add your dates here",
+    date: "Feb-April 2026",
     points: [
       "Developed and deployed web solutions for real-world clients, including a school website and UrbanRize's corporate website.",
       "Engineered an Inventory Management System to streamline hardware product tracking, stock updates, and record management.",
@@ -136,7 +136,7 @@ const experiences = [
     company_name: "PMS Robotics Research Center, Pune",
     icon: backend,
     iconBg: "#E6DEDD",
-    date: "Add your dates here",
+    date: "Jan-Feb 2026",
     points: [
       "Developed an AI-powered chatbot as part of automation and machine learning training programs.",
       "Implemented conversational workflows and explored Natural Language Processing (NLP) concepts for intelligent user interactions.",
