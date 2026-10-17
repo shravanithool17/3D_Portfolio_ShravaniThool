@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a051b" />
+      <stop offset="50%" stop-color="#12082b" />
+      <stop offset="100%" stop-color="#050210" />
+    </linearGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="neonPinkCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#00f5d4" />
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#00b4d8" />
+    </linearGradient>
+
+    <linearGradient id="topFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="60%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#ff007f" />
+    </linearGradient>
+
+    <linearGradient id="leftFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#2a085c" />
+    </linearGradient>
+
+    <linearGradient id="rightFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#800040" />
+    </linearGradient>
+
+    <linearGradient id="sLetterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#c4b5fd" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ff007f" stop-opacity="0.6" />
+      <stop offset="80%" stop-color="#7928ca" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="megaGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="3" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Squircle Body -->
+  <rect x="4" y="4" width="120" height="120" rx="32" fill="url(#bgGrad)" stroke="url(#neonPinkCyan)" stroke-width="2.5" />
+
+  <!-- Ambient Radiant Core -->
+  <circle cx="64" cy="64" r="48" fill="url(#coreGlow)" filter="url(#megaGlow)" />
+
+  <!-- 3D Orbital Rings (Gyroscopic Tech Rings) -->
+  <ellipse cx="64" cy="64" rx="52" ry="20" fill="none" stroke="#00f5d4" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.65" transform="rotate(-30 64 64)" filter="url(#subtleGlow)" />
+  <ellipse cx="64" cy="64" rx="52" ry="20" fill="none" stroke="#ff007f" stroke-width="1.8" stroke-dasharray="10 5" opacity="0.65" transform="rotate(45 64 64)" filter="url(#subtleGlow)" />
+
+  <!-- Floating Orbital Particles -->
+  <circle cx="20" cy="48" r="2.5" fill="#00f5d4" filter="url(#subtleGlow)" />
+  <circle cx="108" cy="80" r="3" fill="#ff007f" filter="url(#subtleGlow)" />
+  <circle cx="98" cy="32" r="2" fill="#c084fc" filter="url(#subtleGlow)" />
+  <circle cx="34" cy="98" r="2.5" fill="#facc15" filter="url(#subtleGlow)" />
+
+  <!-- 3D Isometric Quantum Hypercube -->
+  <g transform="translate(0, -2)">
+    <!-- Top Face -->
+    <polygon points="64,28 94,44 64,60 34,44" fill="url(#topFacet)" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.2" />
+    
+    <!-- Left Face -->
+    <polygon points="34,44 64,60 64,96 34,80" fill="url(#leftFacet)" stroke="#7928ca" stroke-width="1.2" />
+    
+    <!-- Right Face -->
+    <polygon points="64,60 94,44 94,80 64,96" fill="url(#rightFacet)" stroke="#ff007f" stroke-width="1.2" />
+
+    <!-- Center Glowing Seam -->
+    <line x1="64" y1="60" x2="64" y2="96" stroke="#00f5d4" stroke-width="2" filter="url(#subtleGlow)" />
+
+    <!-- Stylized Futuristic 'S' / 3D Lightning Emblem overlaid -->
+    <path d="M 72 40 
+             L 56 40 
+             A 6 6 0 0 0 50 46 
+             L 50 52 
+             A 6 6 0 0 0 56 58 
+             L 72 62 
+             A 7 7 0 0 1 79 69 
+             L 79 76 
+             A 8 8 0 0 1 71 84 
+             L 52 84" 
+          fill="none" 
+          stroke="url(#sLetterGrad)" 
+          stroke-width="5.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          filter="url(#megaGlow)" />
+
+    <!-- Inner Core Sparkle / Star Diamond -->
+    <polygon points="64,55 67,62 74,64 67,66 64,73 61,66 54,64 61,62" fill="#ffffff" filter="url(#megaGlow)" />
+  </g>
+
+  <!-- Cyber Tech Corner Ticks -->
+  <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#00f5d4" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <path d="M 116 24 L 116 12 L 104 12" fill="none" stroke="#ff007f" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <path d="M 12 104 L 12 116 L 24 116" fill="none" stroke="#ff007f" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <path d="M 116 104 L 116 116 L 104 116" fill="none" stroke="#00f5d4" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+</svg>
