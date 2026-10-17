@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ssBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0d1e" />
+      <stop offset="50%" stop-color="#3d142c" />
+      <stop offset="100%" stop-color="#180713" />
+    </linearGradient>
+    <linearGradient id="roseOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="ssGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#ssBg)" />
+
+  <circle cx="140" cy="110" r="140" fill="#f43f5e" opacity="0.16" filter="url(#ssGlow)" />
+  <circle cx="480" cy="230" r="150" fill="#fb923c" opacity="0.14" filter="url(#ssGlow)" />
+
+  <!-- App Window -->
+  <rect x="65" y="45" width="470" height="290" rx="14" fill="#1c0a17" fill-opacity="0.9" stroke="#fb7185" stroke-opacity="0.25" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <rect x="65" y="45" width="470" height="42" rx="14" fill="#2d1024" />
+  <circle cx="90" cy="66" r="5" fill="#ef4444" opacity="0.8" />
+  <circle cx="106" cy="66" r="5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="122" cy="66" r="5" fill="#10b981" opacity="0.8" />
+  <text x="145" y="71" fill="#fecdd3" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14">🤝 श्रमसखी • ShramSakhi</text>
+  <text x="350" y="70" fill="#fbcfe8" font-family="system-ui, -apple-system, sans-serif" font-size="11">Empowering Women Workforce</text>
+
+  <!-- Feature Grid Card 1: Job Portal -->
+  <rect x="85" y="105" width="130" height="85" rx="8" fill="#280f20" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="1" />
+  <text x="100" y="132" font-size="20">💼</text>
+  <text x="100" y="155" fill="#fda4af" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11">Dignified Work</text>
+  <text x="100" y="172" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5">Safe gig &amp; craft jobs</text>
+
+  <!-- Feature Grid Card 2: Legal & Welfare -->
+  <rect x="230" y="105" width="130" height="85" rx="8" fill="#280f20" stroke="#fb923c" stroke-opacity="0.3" stroke-width="1" />
+  <text x="245" y="132" font-size="20">📜</text>
+  <text x="245" y="155" fill="#fed7aa" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11">Govt Schemes</text>
+  <text x="245" y="172" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5">Direct benefit linking</text>
+
+  <!-- Feature Grid Card 3: Financial Literacy -->
+  <rect x="375" y="105" width="140" height="85" rx="8" fill="#280f20" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="1" />
+  <text x="390" y="132" font-size="20">💰</text>
+  <text x="390" y="155" fill="#fda4af" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11">Financial Literacy</text>
+  <text x="390" y="172" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5">Micro-savings &amp; loans</text>
+
+  <!-- Community Banner -->
+  <rect x="85" y="205" width="430" height="80" rx="10" fill="url(#roseOrange)" fill-opacity="0.15" stroke="#f43f5e" stroke-width="1" />
+  <circle cx="120" cy="245" r="22" fill="url(#badgeGrad)" />
+  <text x="110" y="252" font-size="20">🌸</text>
+  <text x="155" y="238" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13">Peer Community &amp; Emergency Helpline</text>
+  <text x="155" y="256" fill="#fecdd3" font-family="system-ui, -apple-system, sans-serif" font-size="11">24/7 SOS helpline, localized multilingual voice support &amp; fair wage awareness.</text>
+  <rect x="155" y="265" width="70" height="15" rx="4" fill="#fb7185" fill-opacity="0.3" />
+  <text x="162" y="276" fill="#ffe4e6" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600">IMPACT DRIVEN</text>
+
+  <!-- Bottom info bar -->
+  <rect x="65" y="300" width="470" height="35" fill="#1f0918" />
+  <text x="85" y="322" fill="#9f758f" font-family="system-ui, -apple-system, sans-serif" font-size="11">React • Node.js • Express • MongoDB • Multilingual UI • Social Innovation</text>
+</svg>
